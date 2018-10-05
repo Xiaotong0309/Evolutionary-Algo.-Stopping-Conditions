@@ -1,0 +1,7 @@
+function flag = hausThreshold(state, params)
+% implementation of a simple threshold decision for the online stopping
+% criteria framework
+epsi = 0.01
+n = size(state.vote);
+for i = 1:n
+    if(state.vote(i) < epsi
